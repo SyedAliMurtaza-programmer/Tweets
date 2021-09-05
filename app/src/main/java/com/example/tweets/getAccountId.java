@@ -1,7 +1,9 @@
 package com.example.tweets;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -9,6 +11,8 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
+
+import java.lang.reflect.Parameter;
 
 public class getAccountId extends AppCompatActivity {
     Spinner sp1;
@@ -44,5 +48,13 @@ public class getAccountId extends AppCompatActivity {
             }
         });
 
+
+
+
+
+    }
+    public void gettingUserInfo(View view){
+        Intent intent = new Intent(this,UserInfo.class);
+        startActivity(intent);
     }
 }

@@ -3,11 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/walee/AndroidStudioProjects/Tweets/app/src/main/res/layout/activity_get_account_id.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/walee/AndroidStudioProjects/Tweets/app/src/main/res/layout/activity_get_started.xml" value="0.33" />
+        <entry key="..\:/Users/walee/AndroidStudioProjects/Tweets/app/src/main/res/drawable/ic_post.xml" value="0.2203125" />
+        <entry key="..\:/Users/walee/AndroidStudioProjects/Tweets/app/src/main/res/layout/activity_get_account_id.xml" value="0.25" />
+        <entry key="..\:/Users/walee/AndroidStudioProjects/Tweets/app/src/main/res/layout/activity_get_started.xml" value="0.22" />
+        <entry key="..\:/Users/walee/AndroidStudioProjects/Tweets/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Users/walee/AndroidStudioProjects/Tweets/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/walee/AndroidStudioProjects/Tweets/app/src/main/res/layout/activity_maps.xml" value="0.22" />
         <entry key="..\:/Users/walee/AndroidStudioProjects/Tweets/app/src/main/res/layout/activity_maps2.xml" value="0.1" />
+        <entry key="..\:/Users/walee/AndroidStudioProjects/Tweets/app/src/main/res/layout/activity_user_info.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/walee/AndroidStudioProjects/Tweets/app/src/main/res/layout/spinner_item.xml" value="0.20416666666666666" />
       </map>
     </option>

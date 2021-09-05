@@ -18,11 +18,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tweets">
         <activity
+            android:name=".Home"
+            android:exported="true" />
+        <activity
+            android:name=".UserInfo"
+            android:exported="true" />
+        <activity
             android:name=".getAccountId"
             android:exported="true" />
         <activity
             android:name=".getStarted"
-            android:exported="true" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -50,11 +64,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
