@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/tweets" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:text="________________________________________________"
+
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/post_layout"
+            android:layout_width="130dp"
+            android:layout_height="170dp"
+            android:layout_below="@+id/line"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:onClick="goToMap">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/post_img"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:src="@drawable/post"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deliver Post"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_img" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rikshaw_layout"
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/line"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/post_layout"
+        android:onClick="goToMap">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/rikshaw_img"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/riksha"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Loader"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rikshaw_img" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mini_truck_layout"
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/post_layout"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:onClick="goToMap">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mini_truck_img"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/minitruck"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Mini"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mini_truck_img" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/rikshaw_layout"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/mini_truck_layout"
+        android:onClick="goToMap">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/truck_img"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/truck"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Truck"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/truck_img" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

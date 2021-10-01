@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tweets</string>
+    <string name="title_activity_maps">title_activity_maps</string>
+    <string name="navigation_drawer_open">open navigation drawer</string>
+    <string name="navigation_drawer_close">close navigation drawer</string>
+
+</resources>

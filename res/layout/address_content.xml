@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Deliver">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tweets"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cAddress"
+        android:text="Enter your Address here:"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="50dp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cAddress"
+        android:hint="Address here"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/cAddressInput"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rAddress"
+        android:text="Enter reciever Address here:"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/cAddressInput"
+        android:layout_marginTop="50dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rAddress"
+        android:hint="Address here"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/rAddressInput"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/km"
+        android:text="Enter expected distance in meters here:"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/rAddressInput"
+        android:layout_marginTop="50dp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/km"
+        android:hint="Distance here in meters"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/kmInput"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kmInput"
+        android:layout_marginTop="14dp"
+        android:background="@color/black"
+        android:text="Next"
+        android:layout_alignParentRight="true"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kmInput"
+        android:layout_marginTop="14dp"
+        android:background="@color/black"
+        android:text="Back"
+        />
+
+
+</RelativeLayout>

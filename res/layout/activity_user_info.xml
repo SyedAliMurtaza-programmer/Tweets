@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfo">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/backTogetAccountId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_back_arrow" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backTogetAccountId"
+        android:hint="Enter Your Name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/name"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:hint="Enter Your Email"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/email"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:hint="Enter Your Referal code"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/referal"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/referal"
+        android:text="By Signing up with TWEETS you agree to our"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:textStyle="bold"
+        android:id="@+id/text"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:text="TERMS AND CONDITIONS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:id="@+id/terms_and_conditions"
+        android:textColor="@color/blue"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/terms_and_conditions"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:padding="10dp"
+        android:onClick="home"
+        android:id="@+id/toHome"
+        >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_right_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/materialTextView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</RelativeLayout>

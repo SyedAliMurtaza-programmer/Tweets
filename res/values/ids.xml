@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cAddress" type="id">cAddress</item>
+    <item name="cAddressInput" type="id">cAddressInput</item>
+    <item name="rAddress" type="id">rAddress</item>
+    <item name="rAddressInput" type="id">rAddressInput</item>
+    <item name="km" type="id">km</item>
+    <item name="kmInput" type="id">kmInput</item>
+    <item name="next" type="id">next</item>
+    <item name="back" type="id">back</item>
+</resources>
